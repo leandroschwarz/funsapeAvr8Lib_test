@@ -1,0 +1,35 @@
+GAS LISTING /tmp/ccfXpPSi.s 			page 1
+
+
+   1               		.file	"main.cpp"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.text
+   8               		.section	.text.startup.main,"ax",@progbits
+   9               	.global	main
+  11               	main:
+  12               	/* prologue: function */
+  13               	/* frame size = 0 */
+  14               	/* stack size = 0 */
+  15               	.L__stack_usage = 0
+  16 0000 8FEF      		ldi r24,lo8(-1)
+  17 0002 87B9      		out 0x7,r24
+  18               	.L2:
+  19 0004 00C0      		rjmp .L2
+  21               		.ident	"GCC: (GNU) 7.3.0"
+GAS LISTING /tmp/ccfXpPSi.s 			page 2
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 main.cpp
+     /tmp/ccfXpPSi.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/ccfXpPSi.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/ccfXpPSi.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/ccfXpPSi.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccfXpPSi.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccfXpPSi.s:11     .text.startup.main:0000000000000000 main
+
+NO UNDEFINED SYMBOLS
